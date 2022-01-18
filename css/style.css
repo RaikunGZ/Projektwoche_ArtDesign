@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+
+:root
+{
+    font-size: 62.5%;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #eee;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+    h1, h2, h3, h4, h5, h6
+    {
+        background-color: 121212;
+        color: #eee;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 3px 3px #555;
+        text-align: center;
+    }
+
+        h1
+        {
+            font-size: 4rem;
+            padding-top: 0.5rem;
+        }
+
+        h2
+        {
+            background-color: #141414;
+            font-size: 3rem;
+            border: solid 1px;
+            padding-top: 2rem;
+        }
+
+    header
+    {
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+    }
+
+        .header_left
+        {
+            width: 7%;
+        }
+
+            .header_left img
+            {
+                width: 80%;
+            }
+
+        .header_mid
+        {
+            width: 85%;
+        }
+
+/* Content */
+
+    main
+    {
+        background-color: #ccc;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        box-shadow: inset -5px -3px 5px #26262699,
+        inset 5px 3px 5px #8a8a8a99;
+    }
+
+        .content
+        {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 2.5rem;
+        }
+
+        .container
+        {
+            width: 12rem;
+            height: 12rem;
+            margin: 0.2rem;
+            position: relative;
+            
+        }
+
+            .infocard, .backface, .creatorcard
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                backface-visibility: hidden;
+            }
+
+            .infocard img, .creatorcard img
+            {
+                width: 100%;
+            }
+
+            .backface
+            {
+                background-color: #ca8a12;
+                width: 100%;
+                height: 100%;
+                padding: 0.8rem;
+                text-align: center;
+                line-height: 1.3rem;
+                position: absolute;
+                transform: rotateX(180deg);
+            }
+
+                .bf_button
+                {
+                    width: 80%;
+                    position: absolute;
+                    bottom: 0.5rem;
+                    left: 10%;
+                }
+
+                .backface p, .backface button
+                {
+                    color: #fff;
+                }
+
+                .container:hover .infocard
+                {
+                    animation: flip_front 60s;
+                    perspective: 20rem;
+                    -moz-perspective: 20rem;
+                    -webkit-perspective: 10rem;
+                }
+
+                .container:hover .backface
+                {
+                    animation: flip_back 60s;
+                    perspective: 20rem;
+                    -moz-perspective: 20rem;
+                    -webkit-perspective: 10rem;
+                }
+
+                    css-slides img
+                    {
+                        width: 100%;
+                        position: absolute;
+                        right:0;
+                        left:0;
+                        animation: fade 12s infinite;
+                        opacity: 0;
+                    }
+                            
+                        .img1
+                        {
+                            animation-delay: 2s;
+                        }
+                                
+                        .img2
+                        {
+                            animation-delay: 6s;
+                        }
+                                    
+                        .img3
+                        {
+                            animation-delay: 12s;
+                        }
+
+                            @keyframes fade
+                            {
+                                0%
+                                { 
+                                    opacity: 0;
+                                }
+                                15%
+                                {
+                                    opacity: 1;
+                                }
+                                50%
+                                {
+                                    opacity: 1;
+                                }
+                                85%
+                                {
+                                    opacity: 0;
+                                }
+                                100%
+                                {
+                                    opacity: 0;
+                                }
+                            }
+
+    #contact
+    {
+        background-color: #11005f44;
+        position: absolute;
+        bottom: 6rem;
+        right: 1.5rem;
+        color: #eee;
+        padding:0.2rem;
+        border-radius: 0.2rem;
+        transition: 1.2s;
+        z-index: 1;
+    }
+
+        #contact:hover
+        {
+            transform: scale(1.5);
+            background-color: #11005fdd;
+            text-align: center;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+        }
+
+        #contact a
+        {
+            font-size: 0.7rem;
+            display: none;
+        }
+
+            #contact a:hover
+            {
+                color: #ffbc65;
+            }
+
+            #contact:hover a
+            {
+                display: block;
+            }
+
+    /* Footer */
+
+    footer
+    {
+        background-color: #12121299;
+        color: #eee;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 8rem;
+    }
+
+        footer #icon
+        {
+            display: block;
+        }
+
+        footer li
+        {
+            line-height: 0.9rem;
+        }
+
+            footer li:hover
+            {
+                color: #7a01c0;
+            }
+
+        .footer_content_container
+        {
+            background-color: #121212;
+            font-size: 1.3rem;
+            width: 100%;
+            display: none;
+            padding: 0.4rem 4rem;
+            position: fixed;
+            left: 0;
+            bottom: 5rem;
+            border-top: solid 3px #141414;
+            
+            
+            /* transform: translateY(150%); */
+        }
+
+            footer:hover .footer_content_container
+            {
+                display: block;
+                position: fixed;
+                bottom: 5rem;
+                /* animation: 2s; */
+                transform: translateY(80%);
+            }
+
+                .footer_content
+                {
+                    display: flex;
+                    text-align: start;
+                    
+                }
+
+                    .footer_content_container ul
+                    {
+                        width: 50%;
+                        padding: 1rem;
+                    }
+
+                    #right
+                    {
+                        display: flex;
+                        justify-content: end;
+                        flex-wrap: wrap;
+                    }
+
+                    #right li
+                    {
+                        margin-left: 2.2rem;
+                    }
+
+                    #copy
+                    {
+                        font-size: 1.1rem;
+                        position: relative;
+                        bottom: -2rem;
+                        right: 9rem;
+                    }
+
+/* --- SHOPS --- */
+
+.shop
+{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 200vh;
+    margin: auto;
+    box-shadow:  none;
+    padding: 1rem;
+    position: relative;
+    border: solid 1px #12121212;
+}
+
+
+
+    optgroup
+    {
+        border-radius: 2rem;
+        color: #7a01c0;  
+    }
+
+    option::before
+    {
+        font-family: "Font Awesome 5 Free";
+        content: \f005;
+        color: #7a01c099;
+        font-weight: 900;
+        font-size: 1.3rem;
+        display: none;
+    }
+
+    option:checked option::before
+    {
+        display: inline;
+    }
+
+/* Persönliche Seite Martin */
+
+#header
+{
+    height: 4.5rem;
+}
+
+#header h1
+{
+    height: 4rem;
+    font-size: 2.8rem;
+    padding: 1rem;
+    letter-spacing: 1rem;
+    text-shadow: none;
+    font-variant: small-caps;
+}
+
+.perso_container_mk
+{
+    background-color: #eeeeff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    box-shadow: 0;
+    position: relative;
+    box-shadow: none;
+}
+
+    .perso_mk
+    {
+        width: 100%;
+        border: solid 1px;
+    }
+
+select
+{
+    position: absolute;
+    top: 1rem;
+    right: -2rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    border-radius: 2rem;
+}
+
+#profil
+{
+    width: 15rem;
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+    #profil img
+    {
+        width: 100%;
+    }
+
+    #box1
+    {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        position: absolute;
+        top: 2rem;
+        left: 15rem;
+    }
+
+    #box2
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 20rem;
+        border: solid 1px;
+    }
+
+    #box3
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 20rem;
+        border: solid 1px;
+    }
+
+        #box1 img, #box2 img, #box3 img
+        {
+            width:10rem;
+        }
+
+        #h2_mk1
+        {
+            text-align: left;
+            padding-left: 2rem;
+        }
+
+        #h2_mk2
+        {
+            text-align: right;
+            padding-right: 2rem;
+        }
