@@ -29,6 +29,11 @@
 
 ## Besonderheiten
 
+- Mobiles Kontaktformular
+- Flip-Cards
+- Flex/Grid
+- Dropdown Menu
+- Login Menu
 
 ## Timetable
 
@@ -36,6 +41,7 @@
 - Aufbau Portfolie bis Mittwoch 10 Uhr
 - Shop Grundaufbau 4h
 - Shop Fertigstellen 3h
+- Responsive 2h
 - Github 3h
 
-Fertig Donnerstag 13 Uhr
+Fertig Donnerstag 15 Uhr
