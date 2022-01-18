@@ -3,8 +3,15 @@
 ## Aufgaben
 
 - Sali
+  - 1 Shop Seite (Kunst)
+  - 1 Portfolio Seite
+
 - Mojdeh
+  - 1 Shop Seite (Leckereien)
+  - 1 Portfolio Seite
 - Martin
+  - 1 Shop Seite (Merch)
+  - 1 Portfolio Seite
 
 ## Regeln
 
