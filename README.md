@@ -25,7 +25,7 @@
 
 ## Timetable
 
-- Recherchen Farben und Shop Design (Aufgbau) 1h
+- Recherchen Farben und Shop Design (Aufbau) 1h
 - Aufbau Portfolie bis Mittwoch 10 Uhr
 - Shop Grundaufbau 4h
 - Shop Fertigstellen 3h
