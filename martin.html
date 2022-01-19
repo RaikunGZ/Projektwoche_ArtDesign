@@ -9,75 +9,103 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/resonsive.css">
     <link rel="stylesheet" href="./css/form.css">
 
     <script src="https://kit.fontawesome.com/2f8cb4d223.js" crossorigin="anonymous"></script>
-    <title>Startseite</title>
+    <title>Protfolio Martin</title>
 </head>
-<body>
-    <header id="header">
-            <h1>Portfolio von Martin aka Raikun</h1>
-    </header>
-    <nav>
+<body class="port_martin_body">
+    <nav class="port_martin_nav">
         <ul>
-            <li id="spacer"></li>
-            <li class="dropdown_container"><a href="shop.html">Shop-Area</a>
-            <ul id="dropdown">
+            <li class="dropdown_container"><a href="#">Shop-Area</a>
+            <ul id="port_martin_dropdown">
                 <li><a href="leckereien.html">Leckereien</a></li>
                 <li><a href="merch-shirts.html">Merch-Shirts</a></li>
                 <li><a href="kunst.html">Kunst</a></li>
             </ul></li>
-            <li class="dropdown_container"><a href="about.html">Über mich</a>
-                <ul id="dropdown" style="width:10.2rem">
-                    <li><a href="martin.html">Steckbrief Martin</a></li>
-                    <li><a href="mojdeh.html">Steckbrief Mojdeh</a></li>
-                    <li><a href="sally.html">Steckbrief Sally</a></li>
+            <li class="dropdown_container"><a href="#">Über mich</a>
+                <ul id="port_martin_dropdown">
+                    <li><a href="martin.html">Portfolio Martin</a></li>
+                    <li><a href="mojdeh.html">Portfolio Mojdeh</a></li>
+                    <li><a href="sally.html">Portfolio Sally</a></li>
                 </ul></li>
-            <li><button type="submit">Login</button></li>
-            <li><button type="submit">Registrieren</button></li>
+            <ul class="port_martin_nav_btn">
+                <li>
+                    <button type="submit" class="port_martin_btn">Login</button>
+                </li>
+                <li>
+                    <button type="submit" class="port_martin_btn">Registrieren</button>
+                </li>
+            </ul>
         </ul>
     </nav>
-    <main class="perso_container_mk">
-        <div id="profil">
-            <img src="./images/martin_img.png" alt="Creator Martin">
-        </div>
-        <section class="perso_mk">
-            <select name="filter" id="categorie_select" placeholder="Filter">
-                <option value="#" selected disabled hidden>Filter</option>
-                <option value="all" id="all" name="categories" checked>Alles</option>
-                <optgroup label="Erweiterte Filter"></optgroup>
-                <option value="filter1" id="filter1" name="categories" checked>Angebote</option>
-                <option value="filter2" id="filter2" name="categories" checked>Angebote</option>
-
-                <option value="filter2" id="filter2" name="categories" checked>
-                    <i class="fas fa-star"></i>Angebote
-                </option>
-            </select>
-            <article id="box1" for=filter2>
-                <h2 id="h2_mk1">Miep hier gehts los</h2>
-                <p>
-
+    </main class="port_martin_main">
+        <section class="port_martin_section">
+            <div class="port_martin_div port_martin_div1">
+                <p class="port_martin_content port_martin_respon">
+                    Hiho willkommen auf meinem Protfolio. Ich heiße martin, bin 31 Jahre aus und komem aus Hamburg. Ich beschäftige mich schon seid meiner Jugend mit verschiedenen Arten der Programmierung.
                 </p>
-                <img src="./images/rabe_preview.png" alt="">
-            </article>
-            <article id="box2" for=filter2>
-                <h2 id="h2_mk2">Miep hier gehts los</h2>
-                <img src="./images/rabe_preview.jpg" alt="">
-                    <p>
-                        fddgdfg
+                <div class="port_martin_img"><img src="./images/martin_img.png" alt=""></div>
+                <p class="port_martin_content port_martin_bot">
+                    Neben dem Programmieren spiele ich gerne Darts, Billiard und Schach. Außerdem bin ich ein leidenschaftlicher Gamer. Mehr dazu findet ihr hier. <br>
+                    <i class="fas fa-arrow-right"></i>
+                </p>
+            </div>
+            <div class="port_martin_div port_martin_div2">
+                <h2>Qualifikationen und Kenntnisse</h2>
+               <div class="port_martin_img port_martin_img_medium"><img src="./images/webdesign.png" alt=""></div>
+                <p class="port_martin_content2">
+                    Mit HTML 5 und CSS 3 habe ich mich schon lange beschäftigt, anfangs als Hobby später auch um für mein eigenes Unternehmen eine Webseite aufzubauen.
+                </p>
+                <div class="port_martin_img port_martin_img_medium"><img src="./images/c_all.png" alt=""></div>
+                <p class="port_martin_content2">
+                    C# war wohl der anfang allen Übels. Ich habe so um 2015 rum sämtliche Vieren auf Youtube in C# nachgebaut und später dann eigene kleine Anwendungen zusammengebastelt. <br>
+                    C++ die Königsdisziplien, dies lernte ich auch zu beginn via Youtube Tutoarials und später dann in der schulischen Ausbildung zum Technischen Assitenten für Informatik. Auch hiermit habe ich allerdings nie Beruflich sondern nur Privat zu tun gehabt. <br>
+                    Mein darmaliges Projekt war ein eigenes OS zu schreiben für ein Smarthome-System, doch leider mit mäßigem Erfolg. 
+                </p>
+                <div class="port_martin_img port_martin_img_medium"><img src="./images/ps_ae.png" alt=""></div>
+                <p class="port_martin_content2">
+                    Durch mein eigenes Unternehmen, aber auch das basteln an webseiten und Youtube/Twitch habe ich mich ebenfalls mit der Bild- und Videobearbeitung beschäftigt. Daher habe ich ein paar gute Kenntnisse mit Photoshop und After Effects.
+                </p>
+                <div class="port_martin_img port_martin_img_medium"><img src="./images/unreal.png" alt=""></div>
+                <p class="port_martin_content2">
+                    Heute arbeite ich an einem eigene Game mit der Unreal engine und auch dafür benötige ich C++, in den 10 Jahren habe ich mehr vergessen als ich je wusste. Mit der Unreal Engine an sich komme ich ganz gut klar, nur an C++ hapert es noch. <br>
+                    Dazu kam nach und nach ein wenig Blender, aber hier beherrsche ich gerade mal die groben Basics.
+                </p>
+            </div>
+        </section>
+        <section class="port_martin_slider">
+            <p id="port_martin_slider_info">Livestreaming</p>
+            <div class="port_martin_div">
+                <div class="port_martin_slider_container">
+                    <p class="port_martin_slider_content">
+                        Ich war schon immer ein kleiner Entertainer
+                        daher ist es auch nur passend, dass ich ein Content-Creator auf Youtube und ein Streamer auf Twitch bin.
                     </p>
-            </article>
-            <article id="box3" for=filter1>
-                <h2 id="h2_mk1">Miep hier gehts los</h2>
-                <p>
-                    fddgdfg
-                </p>
-                    <img src="./images/rabe_preview.jpg" alt="">
-            </article>
-            
+                    <p style="width:100%">
+                        Vor kurzen habe ich angefangen selbst Designs zu entwerfen, das klappt bisher so semi!
+                    </p>
+                    <img class="port_martin_design" src="./images/Party_copyright by Raikun.png" alt="">
+                    <video class="port_martin_design" src="./videos/Chicken_dance.mp4" width="320px" height="240px" controls></video>
+                    <img class="port_martin_design" src="./images/Helloween_HorrorTrees_copyright by Raikun.png" alt="">
+                </div>
+            </div>
+            <div class="port_martin_div">
+                <div class="port_martin_slider_container">
+                    <div class="port_martin_slider_video"><video width="320px" height="240px" controls muted preload="none" src="./videos/Ark_Solo_intro.mp4"></video></div>
+                    <p class="port_martin_slider_content">
+                        Manchen Videos sieht man an, dass ich zu dieser zeit ein Anfänger mit After Effects war. Den Rex musste ich Frame für Frame aus seinem ursprungsvideo herausschneiden und man erkennt hier und da noch die Weiße umrandung.
+                    </p>
+                    <p class="port_martin_slider_content">
+                        Doch nicht nur die Animationen und Effekte sind von mir, sondern auch die Musik ist komplett selbst erstellt.
+                    </p>
+                    <div class="port_martin_slider_video"><video width="320px" height="240px" controls muted preload="none" src="./videos/HiVE_Intro.mp4"></video></div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="port_martin_footer">
         <i class="fas fa-chevron-up" id="icon"></i>
         <div class="footer_content_container">
             <div class="footer_content">
