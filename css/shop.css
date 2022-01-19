@@ -1,15 +1,54 @@
-.shop {
+.shop_main{
     background-color: #eee;
-    display: flex;
-    flex-wrap: wrap;
     width: 90%;
-    height: 200vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     margin: auto;
     box-shadow: none;
     padding: 1rem;
-    position: relative;
-    border: solid 1px #12121212;
+
+    
   }
+
+  .foto1-sali {
+    grid-area: 1/1/3/3;
+  }
+  .shop-sali div img {
+    width: 100%;
+  }
+  .foto2-sali {
+    grid-area: 1/3/4/5;
+  }
+  .foto3-sali {
+    grid-area: 1/5/3/7;
+  }
+  .foto4-sali {
+    grid-area: 4/1/6/4;
+  }
+  .foto5-sali {
+    grid-area: 4/4/6/7;
+  }
+  .foto6-sali {
+    grid-area: 6/1/8/3;
+  }
+  .foto7-sali {
+    grid-area: 6/3/8/5;
+  }
+  .foto8-sali {
+    grid-area: 6/5/8/7;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   optgroup {
     border-radius: 2rem;
