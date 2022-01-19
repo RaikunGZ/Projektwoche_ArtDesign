@@ -8,7 +8,7 @@
 
 - Mojdeh
   - 1 Shop Seite (Leckereien)
-  - 1 Portfolio Seite
+  - 1 Portfolio Seite (Fertig Di 16 Uhr)
 - Martin
   - 1 Shop Seite (Merch)
   - 1 Portfolio Seite
