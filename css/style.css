@@ -64,7 +64,7 @@ header {
 
 /* Content */
 
-.main {
+main {
   background-color: #ccc;
   display: flex;
   flex-wrap: wrap;
