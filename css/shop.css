@@ -1,60 +1,60 @@
 :root {
-  --space: 2rem;
+  --space: 1.5rem;
   --width_img_: 80%;
+
   --primary: #ccc;
   --secondary: #ccc;
   --shaddow: 1px 1px 3px #2c2c2c34;
 }
 
 .shop_main {
+  background-color: rgb(196, 196, 196);
   width: 90%;
   display: flex;
   justify-content: center;
-  height: 150vh;
+
   margin: auto;
   box-shadow: none;
   padding: 1rem;
+  height: 250vh;
   gap: var(--space);
 }
+
 .shop_container {
   display: flex;
+  align-items: center;
   flex-flow: row nowrap;
   width: 100%;
   border: solid;
 }
+
 .shop_container div {
-  width: 33.3%;
-  height: 10vh;
-  border: solid black;
+  width: 32%;
+  height: 80%;
+  margin: var(--space);
+  border: solid white;
 }
+
 .shop_container .shop_middle {
   width: 50%;
   height: 100%;
 }
+
 .shop_small {
   height: 80%;
 }
-.shop_middle {
-  transform: translateY(1.85rem) scaleY(1.2);
-}
-optgroup {
-  border-radius: 2rem;
-  color: #7a01c0;
+
+.shop_top_middle {
+  transform: scaleY(1.2);
 }
 
-option::before {
-  font-family: "Font Awesome 5 Free";
-  content: \f005;
-  color: #7a01c099;
-  font-weight: 900;
-  font-size: 1.3rem;
-  display: none;
+.des_container {
+  width: 100%;
+  display: flex;
 }
 
-option:checked option::before {
-  display: inline;
-}
-img {
-  width: 400px;
-  height: 400px;
+.shop_des {
+  width: 50%;
+  height: 5vh;
+  border: solid 1px white;
 }
