@@ -1,0 +1,30 @@
+.shop {
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 200vh;
+    margin: auto;
+    box-shadow: none;
+    padding: 1rem;
+    position: relative;
+    border: solid 1px #12121212;
+  }
+  
+  optgroup {
+    border-radius: 2rem;
+    color: #7a01c0;
+  }
+  
+  option::before {
+    font-family: "Font Awesome 5 Free";
+    content: \f005;
+    color: #7a01c099;
+    font-weight: 900;
+    font-size: 1.3rem;
+    display: none;
+  }
+  
+  option:checked option::before {
+    display: inline;
+  }
