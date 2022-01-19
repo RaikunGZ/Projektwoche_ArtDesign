@@ -1,0 +1,60 @@
+:root {
+  --space: 2rem;
+  --width_img_: 80%;
+  --primary: #ccc;
+  --secondary: #ccc;
+  --shaddow: 1px 1px 3px #2c2c2c34;
+}
+
+.shop_main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 150vh;
+  margin: auto;
+  box-shadow: none;
+  padding: 1rem;
+  gap: var(--space);
+}
+.shop_container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  border: solid;
+}
+.shop_container div {
+  width: 33.3%;
+  height: 10vh;
+  border: solid black;
+}
+.shop_container .shop_middle {
+  width: 50%;
+  height: 100%;
+}
+.shop_small {
+  height: 80%;
+}
+.shop_middle {
+  transform: translateY(1.85rem) scaleY(1.2);
+}
+optgroup {
+  border-radius: 2rem;
+  color: #7a01c0;
+}
+
+option::before {
+  font-family: "Font Awesome 5 Free";
+  content: \f005;
+  color: #7a01c099;
+  font-weight: 900;
+  font-size: 1.3rem;
+  display: none;
+}
+
+option:checked option::before {
+  display: inline;
+}
+img {
+  width: 400px;
+  height: 400px;
+}
