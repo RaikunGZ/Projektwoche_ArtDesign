@@ -1,69 +1,60 @@
-.shop_main{
-    background-color: #eee;
-    width: 90%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    margin: auto;
-    box-shadow: none;
-    padding: 1rem;
+:root {
+  --space: 1.5rem;
+  --width_img_: 80%;
 
-    
-  }
+  --primary: #ccc;
+  --secondary: #ccc;
+  --shaddow: 1px 1px 3px #2c2c2c34;
+}
 
-  .foto1-sali {
-    grid-area: 1/1/3/3;
-  }
-  .shop-sali div img {
-    width: 100%;
-  }
-  .foto2-sali {
-    grid-area: 1/3/4/5;
-  }
-  .foto3-sali {
-    grid-area: 1/5/3/7;
-  }
-  .foto4-sali {
-    grid-area: 4/1/6/4;
-  }
-  .foto5-sali {
-    grid-area: 4/4/6/7;
-  }
-  .foto6-sali {
-    grid-area: 6/1/8/3;
-  }
-  .foto7-sali {
-    grid-area: 6/3/8/5;
-  }
-  .foto8-sali {
-    grid-area: 6/5/8/7;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  optgroup {
-    border-radius: 2rem;
-    color: #7a01c0;
-  }
-  
-  option::before {
-    font-family: "Font Awesome 5 Free";
-    content: \f005;
-    color: #7a01c099;
-    font-weight: 900;
-    font-size: 1.3rem;
-    display: none;
-  }
-  
-  option:checked option::before {
-    display: inline;
-  }
+.shop_main {
+  background-color: rgb(196, 196, 196);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  box-shadow: none;
+  padding: 1rem;
+  height: 250vh;
+  gap: var(--space);
+}
+
+.shop_container {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  border: solid;
+}
+
+.shop_container div {
+  width: 32%;
+  height: 80%;
+  margin: var(--space);
+  border: solid white;
+}
+
+.shop_container .shop_middle {
+  width: 50%;
+  height: 100%;
+}
+
+.shop_small {
+  height: 80%;
+}
+
+.shop_top_middle {
+  transform: scaleY(1.2);
+}
+
+.des_container {
+  width: 100%;
+  display: flex;
+}
+
+.shop_des {
+  width: 50%;
+  height: 5vh;
+  border: solid 1px white;
+}
