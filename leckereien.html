@@ -22,8 +22,8 @@
     ></script>
     <title>Startseite</title>
   </head>
-  <body>
-    <header>
+  <body class="body_moj">
+    <header class="header_moj">
       <div class="header_left">
         <a href="index.html"
           ><img src="./images/ArtDesign_Logo.png" alt="(AD)ArtDesign Logo"
@@ -33,12 +33,12 @@
         <h1>Willkommen</h1>
       </div>
     </header>
-    <nav>
+    <nav class="moj_nav">
       <ul>
         <li id="spacer"></li>
         <li class="dropdown_container">
           <a href="shop.html">Shop-Area</a>
-          <ul id="dropdown">
+          <ul id="dropdown" style="background-color: #ff1493">
             <li><a href="leckereien.html">Leckereien</a></li>
             <li><a href="merch.html">Merch-Shirts</a></li>
             <li><a href="kunst.html">Kunst</a></li>
@@ -46,77 +46,145 @@
         </li>
         <li class="dropdown_container">
           <a href="about.html">Über mich</a>
-          <ul id="dropdown" style="width: 10.2rem">
+          <ul id="dropdown" style="background-color: #ff1493">
             <li><a href="martin.html">Steckbrief Martin</a></li>
             <li><a href="mojdeh.html">Steckbrief Mojdeh</a></li>
             <li><a href="sally.html">Steckbrief Sally</a></li>
           </ul>
         </li>
-        <li><button type="submit">Login</button></li>
-        <li><button type="submit">Registrieren</button></li>
+        <li><button class="button-moj" type="submit">Login</button></li>
+        <li><button class="button-moj" type="submit">Registrieren</button></li>
       </ul>
     </nav>
-    <main class="shop_main shop_martin">
-        <section class="shop_container">
-            <div id="art01" class="shop_small">
-
-            </div>
-            <div id="art02" class="shop_top_middle">
-
-            </div>
-            <div id="art03" class="shop_small">
-
-            </div>
-        </section>
-        <section>
-            <div id="des01" class="shop_des">
-
-            </div>
-            <div id="des02" class="shop_des">
-
-            </div>
-            <div id="des03" class="shop_des">
-
-            </div>
-        </section>
-        <section  class="shop_container">
-            <div id="art04" class="shop_middle">
-
-            </div>
-            <div id="art05" class="shop_middle">
-                
-            </div>
-        </section>
-        <section class="des_container">
-            <div id="des04" class="shop_des">
-
-            </div>
-            <div id="des05" class="shop_des">
-
-            </div>
-        </section>
-        <section  class="shop_container">
-            <div id="art06" class="shop_small">
-
-            </div>
-            <div id="art07" class="shop_small">
-
-            </div>
-            <div id="art08" class="shop_small">
-                
-            </div>
-        </section>
-        <section>
-            <div id="des06" class="shop_des">
-
-            </div>
-            <div id="des07" class="shop_des">
-
-            </div>
-            <div id="des08" class="shop_des">
-
-            </div>
-        </section>
+    <main class="shop_main_moj">
+      <section class="shop_container">
+        <div class="shop_small">
+          <h2>Sahnerolle</h2>
+          <img
+            id="moj-art01"
+            src="./imgs/photo_2022-01-17_16-57-46.jpg"
+            alt=""
+          />
+        </div>
+        <div class="shop_top_middle">
+          <h2>Kopenhagener Gebäck</h2>
+          <img
+            id="moj-art02"
+            src="./imgs/photo_2022-01-17_16-58-06.jpg"
+            alt=""
+          />
+        </div>
+        <div class="shop_small">
+          <h2>Schokoladenkuchen</h2>
+          <img
+            id="moj-art01"
+            src="./imgs/photo_2022-01-17_16-58-12.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="shop_container">
+        <div id="des01" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+        <div id="des02" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+        <div id="des03" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+      </section>
+      <section class="shop_container">
+        <div id="art04" class="shop_middle">
+          <h2>Sahnerolle</h2>
+          <img
+            id="moj-art02"
+            src="./imgs/photo_2022-01-17_16-58-18.jpg"
+            alt=""
+          />
+        </div>
+        <div id="art05" class="shop_middle">
+          <h2>kaffeetorte</h2>
+          <img
+            id="moj-art02"
+            src="./imgs/photo_2022-01-17_16-58-23.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="des_container">
+        <div id="des04" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+        <div id="des05" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+      </section>
+      <section class="shop_container">
+        <div id="art06" class="shop_small">
+          <h2>torte</h2>
+          <img
+            id="moj-art03"
+            src="./imgs/photo_2022-01-17_16-58-53.jpg"
+            alt=""
+          />
+        </div>
+        <div id="art07" class="shop_small">
+          <h2>himbeertorte</h2>
+          <img
+            id="moj-art03"
+            src="./imgs/photo_2022-01-17_16-58-57.jpg"
+            alt=""
+          />
+        </div>
+        <div id="art08" class="shop_small">
+          <h2>geburtstagtorte</h2>
+          <img id="moj-art03" src="./imgs/torte01_preview.png" alt="" />
+        </div>
+      </section>
+      <section class="shop_container">
+        <div id="des06" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+        <div id="des07" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+        <div id="des08" class="shop_des">
+          <form action="">
+            <input class="input_moj" type="number" maxlength="3" />
+            <button class="button-moj" type="submit">Kaufen</button>
+            <button class="button-moj" type="submit">Wunschliste</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <i class="fas fa-chevron-up" id="icon"></i>
