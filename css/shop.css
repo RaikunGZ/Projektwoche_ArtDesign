@@ -48,6 +48,11 @@
   height: 30rem;
 }
 
+.shop_middle {
+  width: 50%;
+  height: 100%;
+}
+
 .shop_container .shop_middle_merch {
   width: 100%;
   height: auto;
@@ -87,12 +92,13 @@
   height: 100%;
 }
 
-.shop_des_merch {
+.shop_des {
   width: 50%;
-
-  /* border: solid 1px white; */
 }
 
+.shop_des_merch {
+  width: 50%;
+}
 
 /* 'sali' */
 .kunst1 img{
