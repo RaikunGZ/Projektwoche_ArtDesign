@@ -53,6 +53,12 @@
   height: 100%;
 }
 
+.shop_container .shop_middle {
+  width: 50%;
+  height: 100%;
+}
+​
+
 .shop_container .shop_middle_merch {
   width: 100%;
   height: auto;
@@ -79,7 +85,7 @@
   height: 100%;
 }
 
-.shop_top_middle_merch {
+.shop_top_middle {
   transform: scaleY(1.2);
 }
 .shop_top_middle_merch img {
@@ -92,11 +98,12 @@
   height: 100%;
 }
 
-.shop_des {
-  width: 50%;
+.des_container {
+  width: 100%;
+  display: flex;
 }
 
-.shop_des_merch {
+.shop_des {
   width: 50%;
 }
 
