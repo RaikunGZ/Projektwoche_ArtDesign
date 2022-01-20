@@ -2,58 +2,94 @@
   --space: 1.5rem;
   --width_img_: 80%;
 
-  --primary: #ccc;
-  --secondary: #ccc;
-  --shaddow: 1px 1px 3px #2c2c2c34;
+  --primary: #eee;
+  --secondary: #141414;
 }
 
 .shop_main {
-  background-color: rgb(196, 196, 196);
+  background-color: var(--primary);
   width: 90%;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: auto;
   box-shadow: none;
-  padding: 1rem;
-  height: 250vh;
+  margin-top: 10rem;
+  padding-top: 3rem;
   gap: var(--space);
 }
 
 .shop_container {
   display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
-  width: 100%;
-  border: solid;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.shop_large {
+  width: 35%;
+}
+
+.shop_center_large {
+  width: 49%;
+  height: auto;
+  padding-bottom: 15rem;
 }
 
 .shop_container div {
-  width: 32%;
-  height: 80%;
+  width: 90%;
+  height: auto;
   margin: var(--space);
-  border: solid white;
 }
 
-.shop_container .shop_middle {
-  width: 50%;
+.shop_container div img {
+  border: solid black;
+  height: 30rem;
+}
+
+.shop_container .shop_middle_merch {
+  width: 100%;
+  height: auto;
+}
+
+.shop_container .shop_middle_merch img {
+  width: 70%;
+  height: 90%;
+  display: block;
+  margin: auto;
+}
+
+.shop_small_merch {
+  height: 80%;
+}
+
+.shop_small_merch img {
+  background-color: #fff;
+  width: 100%;
   height: 100%;
 }
 
-.shop_small {
-  height: 80%;
-}
-
-.shop_top_middle {
+.shop_top_middle_merch {
   transform: scaleY(1.2);
 }
-
-.des_container {
+.shop_top_middle_merch img {
   width: 100%;
-  display: flex;
+  height: 100%;
 }
 
-.shop_des {
+.shop_middle_merch img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_des_merch {
   width: 50%;
-  height: 5vh;
-  border: solid 1px white;
+  color: var(--secondary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.shop_des_merch ul li {
+  color: var(--secondary);
 }
