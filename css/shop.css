@@ -24,14 +24,15 @@
   align-items: center;
   flex-flow: row nowrap;
   width: 100%;
-  border: solid;
+  /* border: solid; */
 }
 
 .shop_container div {
   width: 32%;
   height: 80%;
   margin: var(--space);
-  border: solid white;
+  padding: var(--space);
+  /* border: solid white; */
 }
 
 .shop_container .shop_middle {
@@ -40,7 +41,7 @@
 }
 
 .shop_small {
-  height: 80%;
+  height: 90%;
 }
 
 .shop_top_middle {
@@ -54,6 +55,18 @@
 
 .shop_des {
   width: 50%;
-  height: 5vh;
-  border: solid 1px white;
+
+  /* border: solid 1px white; */
 }
+
+
+/* 'sali' */
+.kunst1 img{
+  width: 80%;
+
+}
+.kunst2 img{
+  width: 20%;
+}
+.sali-body{background-color: #131415;
+   color: #b0a890;}
