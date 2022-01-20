@@ -14,6 +14,20 @@
   .port_martin_slider:hover {
     transform: translateX(-85%);
   }
+
+  /* SHOP */
+
+  .shop_main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .shop_container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -63,7 +77,6 @@
     width: 50%;
     padding: 2rem;
   }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -142,5 +155,15 @@
   .port_martin_design {
     width: 80%;
     padding: 2rem;
+  }
+
+  .shop_container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #spacer {
+    width: 10%;
   }
 }
