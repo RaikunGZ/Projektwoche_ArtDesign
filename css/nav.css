@@ -1,9 +1,8 @@
-nav
-{
-    background-color: #7a01c0;
-    font-size: 1.5rem;
-    padding: 0.1rem 1rem 0 1rem;
-    z-index: 3;
+nav {
+  background-color: #262728;
+  font-size: 1.5rem;
+  padding: 0.1rem 1rem 0 1rem;
+  z-index: 3;
 }
     
     nav ul
@@ -67,11 +66,27 @@ nav
             border-radius:  0.5rem;
         }
 
+
+#dropdown {
+  background-color: #262728;
+  width: 8rem;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  overflow: hidden;
+  padding: 0.2rem 1rem;
+  opacity: 0;
+  border-radius: 0.5rem;
+}
+
             .dropdown li a:hover
             {
                 text-decoration: underline 0.1rem #c40000;
                 text-underline-offset: 0.2rem;
             }
+
 
             button
             {
