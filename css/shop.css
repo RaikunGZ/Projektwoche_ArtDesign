@@ -50,6 +50,7 @@
 .des_container {
   width: 100%;
   display: flex;
+  margin-left: 3rem;
 }
 
 .shop_des {
@@ -104,6 +105,10 @@
 }
 .input_moj {
   height: 4rem;
+}
+.moj_font {
+  font-size: 4rem;
+  font-weight: bold;
 }
 /* @media screen and (max-width: 1124px) {
   .shop_container {
