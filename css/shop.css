@@ -6,9 +6,11 @@
   --secondary: #ccc;
   --shaddow: 1px 1px 3px #2c2c2c34;
 }
-
-.shop_main {
-  background-color: rgb(196, 196, 196);
+.body_moj {
+  background-color: #ffb6c1;
+}
+.shop_main_moj {
+  background-color: #ffb6c1;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -24,14 +26,12 @@
   align-items: center;
   flex-flow: row nowrap;
   width: 100%;
-  border: solid;
 }
 
 .shop_container div {
   width: 32%;
   height: 80%;
   margin: var(--space);
-  border: solid white;
 }
 
 .shop_container .shop_middle {
@@ -50,10 +50,71 @@
 .des_container {
   width: 100%;
   display: flex;
+  margin-left: 3rem;
 }
 
 .shop_des {
   width: 50%;
-  height: 5vh;
-  border: solid 1px white;
 }
+
+#moj-art01 {
+  width: 96%;
+  height: 100%;
+}
+#moj-art02 {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+#moj-art03 {
+  width: 85%;
+  height: 80%;
+  overflow: hidden;
+}
+.shop_container h2 {
+  font-size: 30px;
+  color: #ff1493;
+  background-color: #ffb6c1;
+  border: none;
+  text-align: center;
+  text-shadow: none;
+}
+.moj_nav {
+  background-color: #ff1493;
+}
+.header_moj {
+  background-color: #ffb6c1;
+}
+.button-moj {
+  background-color: transparent;
+  color: #f8f2f5;
+  background-color: #ff1493;
+  width: 8rem;
+  height: 2.5rem;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  border: solid 1px #ff1493;
+  border-radius: 0.3rem;
+}
+
+.button-moj:hover {
+  background-color: #c71585;
+  border-color: #ff1493;
+  transition: 1.5s;
+}
+.input_moj {
+  height: 4rem;
+}
+.moj_font {
+  font-size: 4rem;
+  font-weight: bold;
+}
+/* @media screen and (max-width: 1124px) {
+  .shop_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+} */
